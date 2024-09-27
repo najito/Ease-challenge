@@ -30,7 +30,7 @@ const App = () => {
     const handleAddTodo = () => {
         if (input) {
             const newTodo = { id: Date.now(), text: input };
-            dispatch(newTodo);
+            dispatch(addTodo(newTodo));
             setInput('');
         }
     };
